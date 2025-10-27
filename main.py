@@ -5,9 +5,13 @@ from service.bitacora_service import guardar_bitacora
 
 app = FastAPI()
 
+# ✅ Configuración CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "http://localhost:4200",  # para pruebas locales
+        "https://frontend-oxipro.onrender.com"  # si luego subes el front a Render
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -23,8 +27,7 @@ def root():
 def guardar_mantenimiento_api(data: dict):
     tecnico = data.get("nombre_tecnico")
     if not tecnico:
-        return {"status": "error", "mensaje":
-                "Falta el campo 'nombre_tecnico'"}
+        return {"status": "error", "mensaje": "Falta el campo 'nombre_tecnico'"}
     return guardar_mantenimiento(tecnico, data)
 
 
