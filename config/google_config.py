@@ -1,4 +1,5 @@
 import gspread
+import os
 from google.oauth2.service_account import Credentials
 
 SCOPE = [
@@ -6,8 +7,15 @@ SCOPE = [
     "https://www.googleapis.com/auth/drive"
 ]
 
+CREDENTIALS_PATH = "/etc/secrets/credentials.json"
+
+if not os.path.exists(CREDENTIALS_PATH):
+    # fallback por si está en local
+    CREDENTIALS_PATH = "credentials.json"
+
 creds = Credentials.from_service_account_file(
-    "credentials.json", scopes=SCOPE)
+    CREDENTIALS_PATH, scopes=SCOPE)
+
 client = gspread.authorize(creds)
 
 SHEETS_IDS = {
