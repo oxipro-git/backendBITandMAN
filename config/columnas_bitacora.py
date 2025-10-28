@@ -3,7 +3,7 @@ COLUMNAS_BITACORA = [
     "g_numeroRemisionEquipos", "g_numeroRemisionEquiposSalida",
     "g_liberaRepuestos", "g_numeroRemisionRepuestos",
     "g_mostrarAlistamiento", "g_mostrarMantenimiento",
-    "g_mostrarTercero", "g_ayudaOtroTecnico",
+    "g_mostrarTercero", "g_ayudaOtroTecnico", "g_nombreOtroTecnico",
     "a_alarmaCero", "a_flujoMaximo", "a_desconexion",
     "a_marcaCalor", "a_cantidadMarcaCalor", "a_i_equiposVerificados",
     "a_i_horaInicio", "a_i_horaFin", "a_i_equiposApoyo",
