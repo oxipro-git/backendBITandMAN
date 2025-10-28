@@ -10,7 +10,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:4200",  # para pruebas locales
-        "https://frontend-oxipro.onrender.com"  # si luego subes el
+        "https://frontendbitandman.onrender.com"
+        "https://oxp-bitacora-man.onrender.com"  # si luego subes el
         # front a Render
     ],
     allow_credentials=True,
