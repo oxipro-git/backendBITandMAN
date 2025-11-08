@@ -3,7 +3,7 @@ COLUMNAS_BITACORA = [
     "g_numeroRemisionEquipos", "g_numeroRemisionEquiposSalida",
     "g_liberaRepuestos", "g_numeroRemisionRepuestos",
     "g_mostrarAlistamiento", "g_mostrarMantenimiento",
-    "g_mostrarTercero", "g_ayudaOtroTecnico", "g_nombreOtroTecnico",
+    "g_mostrarTercero", "g_ayudaOtroTecnico",
     "a_alarmaCero", "a_flujoMaximo", "a_desconexion",
     "a_marcaCalor", "a_cantidadMarcaCalor", "a_i_equiposVerificados",
     "a_i_horaInicio", "a_i_horaFin", "a_i_equiposApoyo",
@@ -28,5 +28,11 @@ COLUMNAS_BITACORA = [
     "t_p_horaInicio", "t_p_horaFin", "t_p_equiposApoyo",
     "t_li_equiposLiberados", "t_li_horaInicio", "t_li_horaFin",
     "t_li_equiposApoyo", "t_te_equiposVerificados", "t_te_horaInicio",
-    "t_te_horaFin"
+    "t_te_horaFin,", "r_realizaReparacion", "r_l_equiposVerificados",
+    "r_l_horaInicio", "r_l_horaFin", "r_l_equiposApoyo",
+    "r_p_equiposVerificados", "r_p_horaInicio",
+    "r_p_horaFin", "r_p_equiposApoyo", "r_r_equiposIngresados",
+    "r_r_equiposReparados", "r_r_horaInicio", "r_r_horaFin",
+    "r_r_equiposApoyo", "r_li_equiposLiberados", "r_li_horaInicio",
+    "r_li_horaFin", "r_li_equiposApoyo",
 ]
