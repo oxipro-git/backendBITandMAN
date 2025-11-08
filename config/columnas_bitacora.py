@@ -1,7 +1,7 @@
 COLUMNAS_BITACORA = [
     "g_fecha", "g_tecnico", "g_cantidadEquipos",
     "g_numeroRemisionEquipos", "g_numeroRemisionEquiposSalida",
-    "g_liberaRepuestos", "g_numeroRemisionRepuestos",
+    "g_liberaRepuestos", "g_numeroRemisionRepuestos", "g_mostrarReguladores",
     "g_mostrarAlistamiento", "g_mostrarMantenimiento",
     "g_mostrarTercero", "g_ayudaOtroTecnico",
     "a_alarmaCero", "a_flujoMaximo", "a_desconexion",
